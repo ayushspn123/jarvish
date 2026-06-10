@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>JARVIS</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/icon-192.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">JARVIS</div>
+    <button id="newChat" class="ghost" title="New chat">New chat</button>
+  </header>
+
+  <main>
+    <div id="orb" class="orb idle">
+      <span id="orbLabel">Tap to talk</span>
+    </div>
+    <div id="status" class="status">Idle</div>
+    <div id="log" class="log"></div>
+  </main>
+
+  <footer>
+    <button id="talk" class="talk">Start talking</button>
+    <form id="typeForm" class="typebar">
+      <input id="typeInput" type="text" placeholder="…or type a command" autocomplete="off" />
+      <button type="submit" class="send">Send</button>
+    </form>
+    <p class="hint">Talk naturally — just start speaking to interrupt. Works best in Chrome.</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

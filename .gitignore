@@ -1,0 +1,23 @@
+# Secrets — never commit these
+.env
+credentials.json
+google_token.json
+
+# Large binaries / local tooling
+cloudflared.exe
+chrome_profile/
+
+# Virtual environments
+.venv/
+.venv-clone/
+
+# Voice-clone artifacts & models
+voice_clone/reference.wav
+voice_clone/checkpoints_v2/
+voice_clone/OpenVoice/
+voice_clone/*.log
+voice_clone/_*.wav
+
+# Python
+__pycache__/
+*.pyc

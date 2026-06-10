@@ -1,0 +1,24 @@
+# Core brain
+openai>=1.40.0
+python-dotenv>=1.0.0
+rich>=13.7.0
+
+# Web search & summarize
+ddgs>=6.0.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# System / process control
+psutil>=5.9.0
+
+# Voice mode (optional — only needed for --voice)
+SpeechRecognition>=3.10.0
+# Natural neural text-to-speech (online, free) + audio playback
+edge-tts>=6.1.0
+pygame>=2.5.0
+# Offline fallback voice (robotic, used only if there's no internet)
+pyttsx3>=2.90
+# PyAudio is required for microphone input. On Windows:
+#   pip install PyAudio
+# If that fails, use a prebuilt wheel: pip install pipwin && pipwin install pyaudio
+PyAudio>=0.2.13
